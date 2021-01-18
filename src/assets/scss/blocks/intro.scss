@@ -1,0 +1,53 @@
+.intro {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+
+	margin-top: 3rem;
+}
+
+.intro__banner {
+	flex: 0 0 70%;
+	position: relative;
+}
+
+.intro__image {
+	max-height: 400px;
+	height: auto;
+	width: 100%;
+	object-fit: cover;
+}
+
+.intro__content {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	z-index: 1;
+
+	transform: translateY(-50%);
+
+	padding: 2rem 4rem;
+
+	font-family: $lato;
+}
+
+.intro__title {
+	margin-bottom: 4rem;
+
+	font-size: 4.5rem;
+	color: $secondary;
+
+	strong {
+		color: $purple;
+		font-weight: 700;
+	}
+}
+
+.intro__text {
+	margin-bottom: 1rem;
+	max-width: 85%;
+
+	color: $white;
+	font-weight: 300;
+	font-size: 1.6rem;
+}
